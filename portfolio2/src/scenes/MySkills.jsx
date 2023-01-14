@@ -10,12 +10,12 @@ import GitHub from '../assets/github.png';
 import Tailwind from '../assets/tailwind.png';
 import Node from '../assets/node.png';
 
-const MySkills = () => {
+const MySkills = () => {    
 
 
   return (
     <section id="skills" 
-    className="pt-10 pb-24">
+    className="pt-48 pb-48">
       {/* HEADER SECTION */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         
@@ -33,8 +33,8 @@ const MySkills = () => {
           <p className="font-playfair font-semibold text-4xl flex justify-center mb-5">
             MY <span className="text-red"> SKILLS</span>
           </p>
-          <div className="flex justify-center mt-5">
-          <LineGradient width="w-1/3" />
+          <div className="flex justify-center ">
+          <LineGradient width="w-1/3"/>
           </div>
           <p className="flex justify-center mt-10 mb-7">
           These are the technologies I've worked with:

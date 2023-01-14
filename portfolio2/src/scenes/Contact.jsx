@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact py-48">
+    <section id="contact" className="contact pt-48 pb-48">
       {/* HEADINGS */}
       <motion.div
       className="flex justify-center w-full"
@@ -33,11 +33,11 @@ const Contact = () => {
         
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
-            <span className="text-yellow">CONTACT ME</span> LETS DO IT
+          <p className="flex font-playfair justify-center font-semibold text-4xl mb-5">
+            <span className="text-yellow">LETS</span><span className="text-pink">COLLABORATE</span>
           </p>
-          <div className="flex md:justify-center my-5">
-            <LineGradient/>
+          <div className="md:justify-center my-5">
+            <LineGradient  />
           </div>
         </div>
       </motion.div>
@@ -129,9 +129,8 @@ const Contact = () => {
             )}
 
             <button
-              className="flex items-center justify-center p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
-              type="submit"
-            >
+              className="w-full justify-center p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              type="submit">
               SEND ME A MESSAGE
             </button>
           </form>

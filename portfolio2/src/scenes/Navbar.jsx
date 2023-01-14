@@ -7,8 +7,8 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
     return (
         <AnchorLink
           className={`${
-            selectedPage === lowerCasePage ? "text-pink" : ""
-          } hover:text-pink transition duration-500`}
+            selectedPage === lowerCasePage ? "text-blue" : ""
+          } hover:text-blue transition duration-500`}
           href={`#${lowerCasePage}`}
           onClick={() => setSelectedPage(lowerCasePage)}
         >
@@ -64,7 +64,7 @@ return (
 
                 {/* MOBILE MENU POPUP */}
                 {!isDesktop && isMenuToggled && (
-                  <div className="fixed right-0 bottom-0 h-full items-center bg-yellow w-[300px]">
+                  <div className="fixed right-0 bottom-0 h-full items-center bg-gradient-to-r from-pink to-yellow w-[300px]">
                     {/* CLOSE ICON */}
                     <div className="flex justify-end p-12">
                       <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -73,7 +73,7 @@ return (
                     </div>
 
             {/* MENU ITEMS */}
-            <div className="flex flex-col text-center font-bold gap-10 ml-[5%] text-2xl text-white">
+            <div className="flex flex-col text-center font-bold gap-10 text-2xl text-white">
               <Link
                 page="Home"
                 selectedPage={selectedPage}
